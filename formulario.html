@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <div>
+            <h1 id="titulo">Cadastro Time</h1>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" placeholder="nome do time" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nomedatorcida"><strong>Nome da Torcida</strong></label>
+                    <input type="text" placeholder="nome da torcida" name="nomedatorcida" id="nomedatorcida" required>
+                </div>
+            </fieldset> 
+
+
+            
+            <div class="campo">
+                <label><strong>Qual é região do time?</strong></label>
+                <label>
+                    <input type="radio" name="regiao" value="Nordeste" checked>Nordeste
+                </label>
+                <label>
+                    <input type="radio" name="regiao" value="Suldeste">Suldeste
+                </label>
+                <label>
+                    <input type="radio" name="regiao" value="Sul">Sul
+                </label>
+                <label>
+                    <input type="radio" name="regiao" value="Norte">Norte
+                </label>
+                <label>
+                    <input type="radio" name="regiao" value="Centro-oeste">Centro-oeste
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="senioridade"><strong>Divisão do time</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Série A</option>
+                  <option>Série B</option>
+                  <option>Série C</option>
+                  <option>Série D</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+               
+                <div id="check">
+                    <label><strong>Cores do time:</strong></label>
+                    <input type="checkbox" id="cor1" name="cor1" value="verde">
+                    <label for="tecnologia1"> Verde</label>
+                    <input type="checkbox" id="cor2" name="cor2" value="azul">
+                    <label for="tecnologia2"> Azul</label>
+                    <input type="checkbox" id="cor3" name="cor3" value="preto">
+                    <label for="tecnologia3"> Preto</label>
+                    <input type="checkbox" id="cor4" name="cor4" value="vermelho">
+                    <label for="tecnologia4"> Vermelho</label>
+                    <input type="checkbox" id="cor5" name="cor5" value="branco">
+                    <label for="tecnologia5"> Branco</label>
+                    <input type="checkbox" id="cor6" name="cor6" value="amarelo">
+                    <label for="tecnologia6"> Amarelo</label>
+                    <input type="checkbox" id="cor7" name="cor7" value="laranja">
+                    <label for="tecnologia7"> Laranja</label>
+                </div>
+            </fieldset>
+
+           
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>O que você sabe sobre esse time ? </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
